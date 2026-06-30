@@ -1,0 +1,153 @@
+# ==========================================
+# Day 1 Python Practice Programs
+# Author: Sai
+# ==========================================
+
+# ------------------------------------------
+# Program 1: Hello World
+# ------------------------------------------
+print("Program 1")
+print("Hello, World!")
+print("-" * 40)
+
+
+# ------------------------------------------
+# Program 2: Print Personal Information
+# ------------------------------------------
+print("Program 2")
+
+name = "Sai"
+age = 20
+city = "Nellore"
+
+print("Name:", name)
+print("Age:", age)
+print("City:", city)
+print("-" * 40)
+
+
+# ------------------------------------------
+# Program 3: Greeting the User
+# ------------------------------------------
+print("Program 3")
+
+name = input("Enter your name: ")
+
+print(f"Hello, {name}! Welcome to Python.")
+
+print("-" * 40)
+
+
+# ------------------------------------------
+# Program 4: Add Two Numbers
+# ------------------------------------------
+print("Program 4")
+
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+
+print("Sum =", a + b)
+
+print("-" * 40)
+
+
+# ------------------------------------------
+# Program 5: Area of a Rectangle
+# ------------------------------------------
+print("Program 5")
+
+length = float(input("Enter length: "))
+width = float(input("Enter width: "))
+
+area = length * width
+
+print("Area =", area)
+
+print("-" * 40)
+
+
+# ------------------------------------------
+# Program 6: Average of Three Numbers
+# ------------------------------------------
+print("Program 6")
+
+num1 = float(input("Enter first number: "))
+num2 = float(input("Enter second number: "))
+num3 = float(input("Enter third number: "))
+
+average = (num1 + num2 + num3) / 3
+
+print("Average =", average)
+
+print("-" * 40)
+
+
+# ------------------------------------------
+# Program 7: Celsius to Fahrenheit
+# ------------------------------------------
+print("Program 7")
+
+celsius = float(input("Enter temperature in Celsius: "))
+
+fahrenheit = (celsius * 9 / 5) + 32
+
+print("Temperature in Fahrenheit =", fahrenheit)
+
+print("-" * 40)
+
+
+# ------------------------------------------
+# Program 8: Swap Two Numbers
+# ------------------------------------------
+print("Program 8")
+
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+
+a = a + b
+b = a - b
+a = a - b
+
+print("After Swapping")
+print("First Number =", a)
+print("Second Number =", b)
+
+print("-" * 40)
+
+
+# ------------------------------------------
+# Program 9: Student Information
+# ------------------------------------------
+print("Program 9")
+
+student_name = input("Enter student name: ")
+student_age = int(input("Enter student age: "))
+college = input("Enter college name: ")
+branch = input("Enter branch name: ")
+
+print("\n----- Student Information -----")
+print("Name    :", student_name)
+print("Age     :", student_age)
+print("College :", college)
+print("Branch  :", branch)
+
+print("-" * 40)
+
+
+# ------------------------------------------
+# Program 10: Basic Calculator
+# ------------------------------------------
+print("Program 10")
+
+num1 = float(input("Enter first number: "))
+num2 = float(input("Enter second number: "))
+
+print("Addition        =", num1 + num2)
+print("Subtraction     =", num1 - num2)
+print("Multiplication  =", num1 * num2)
+print("Division        =", num1 / num2)
+print("Floor Division  =", num1 // num2)
+print("Modulus         =", num1 % num2)
+print("Exponent        =", num1 ** num2)
+
+print("-" * 40)
