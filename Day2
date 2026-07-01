@@ -1,0 +1,117 @@
+# Day 2: Python Decision Making Programs
+
+## Program 1: Check Whether a Number is Positive, Negative, or Zero
+
+
+num = int(input("Enter a number: "))
+
+if num > 0:
+    print("Positive")
+elif num < 0:
+    print("Negative")
+else:
+    print("Zero")
+
+
+## Program 2: Check Whether a Number is Even or Odd
+
+num = int(input("Enter a number: "))
+
+if num % 2 == 0:
+    print("Even")
+else:
+    print("Odd")
+
+
+## Program 3: Find the Greater of Two Numbers
+
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+
+if a > b:
+    print(a, "is greater")
+elif b > a:
+    print(b, "is greater")
+else:
+    print("Both numbers are equal")
+
+
+
+## Program 4: Check Voting Eligibility
+
+
+age = int(input("Enter your age: "))
+
+if age >= 18:
+    print("Eligible to vote")
+else:
+    print("Not eligible to vote")
+
+
+## Program 5: Check Whether a Number is Divisible by 5
+
+
+num = int(input("Enter a number: "))
+
+if num % 5 == 0:
+    print(num, "is divisible by 5")
+else:
+    print(num, "is not divisible by 5")
+
+
+## Program 6: Check Whether a Year is a Leap Year
+
+
+year = int(input("Enter a year: "))
+
+if (year % 400 == 0) or (year % 4 == 0 and year % 100 != 0):
+    print(year, "is a Leap Year")
+else:
+    print(year, "is not a Leap Year")
+
+
+## Program 7: Check Whether a Character is a Vowel or Consonant
+
+
+ch = input("Enter an alphabet: ").lower()
+
+if ch in ['a', 'e', 'i', 'o', 'u']:
+    print("Vowel")
+else:
+    print("Consonant")
+
+## Program 8: Check Whether a Number is Divisible by Both 5 and 11
+
+
+num = int(input("Enter a number: "))
+
+if num % 5 == 0 and num % 11 == 0:
+    print(num, "is divisible by both 5 and 11")
+else:
+    print(num, "is not divisible by both 5 and 11")
+
+
+## Program 9: Check Whether a Student Has Passed or Failed
+
+
+marks = int(input("Enter marks: "))
+
+if marks >= 35:
+    print("Pass")
+else:
+    print("Fail")
+
+
+## Program 10: Find the Largest of Three Numbers
+
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+c = int(input("Enter third number: "))
+
+if a >= b and a >= c:
+    print(a, "is the largest")
+elif b >= a and b >= c:
+    print(b, "is the largest")
+else:
+    print(c, "is the largest")
+
