@@ -56,9 +56,9 @@ This repository contains my **Day 2 Python** practice programs focused on **deci
 * Boolean Expressions
 * Nested Conditions (Introduction)
 
-# Python Day 2 Practice
+# Python Day 3 Practice
 
-This repository contains my **Day 2 Python** practice programs focused on **decision-making using conditional statements**.
+This repository contains my **Day 3 Python** practice programs focused on **decision-making using conditional statements**.
 
 ## Programs
 
