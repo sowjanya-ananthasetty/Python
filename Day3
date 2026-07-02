@@ -1,0 +1,401 @@
+# Python Day 2 - Decision Making Programs
+
+## 1. Positive, Negative, or Zero
+
+```python
+num = int(input("Enter a number: "))
+
+if num > 0:
+    print("Positive")
+elif num < 0:
+    print("Negative")
+else:
+    print("Zero")
+```
+
+---
+
+## 2. Even or Odd
+
+```python
+num = int(input("Enter a number: "))
+
+if num % 2 == 0:
+    print("Even")
+else:
+    print("Odd")
+```
+
+---
+
+## 3. Greater of Two Numbers
+
+```python
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+
+if a > b:
+    print(a, "is greater")
+elif b > a:
+    print(b, "is greater")
+else:
+    print("Both numbers are equal")
+```
+
+---
+
+## 4. Voting Eligibility
+
+```python
+age = int(input("Enter your age: "))
+
+if age >= 18:
+    print("Eligible to vote")
+else:
+    print("Not eligible to vote")
+```
+
+---
+
+## 5. Divisible by 5
+
+```python
+num = int(input("Enter a number: "))
+
+if num % 5 == 0:
+    print("Divisible by 5")
+else:
+    print("Not divisible by 5")
+```
+
+---
+
+## 6. Leap Year Checker
+
+```python
+year = int(input("Enter a year: "))
+
+if (year % 400 == 0) or (year % 4 == 0 and year % 100 != 0):
+    print("Leap Year")
+else:
+    print("Not a Leap Year")
+```
+
+---
+
+## 7. Vowel or Consonant
+
+```python
+ch = input("Enter a character: ").lower()
+
+if ch in "aeiou":
+    print("Vowel")
+else:
+    print("Consonant")
+```
+
+---
+
+## 8. Divisible by Both 5 and 11
+
+```python
+num = int(input("Enter a number: "))
+
+if num % 5 == 0 and num % 11 == 0:
+    print("Divisible by both 5 and 11")
+else:
+    print("Not divisible by both 5 and 11")
+```
+
+---
+
+## 9. Pass or Fail
+
+```python
+marks = int(input("Enter marks: "))
+
+if marks >= 35:
+    print("Pass")
+else:
+    print("Fail")
+```
+
+---
+
+## 10. Largest of Three Numbers
+
+```python
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+c = int(input("Enter third number: "))
+
+if a >= b and a >= c:
+    print("Largest:", a)
+elif b >= a and b >= c:
+    print("Largest:", b)
+else:
+    print("Largest:", c)
+```
+
+---
+
+## 11. Grade Calculator
+
+```python
+marks = int(input("Enter your marks: "))
+
+if marks >= 90:
+    print("Grade A")
+elif marks >= 75:
+    print("Grade B")
+elif marks >= 50:
+    print("Grade C")
+elif marks >= 35:
+    print("Grade D")
+else:
+    print("Fail")
+```
+
+---
+
+## 12. Driving License Eligibility
+
+```python
+age = int(input("Enter your age: "))
+eye_test = input("Eye test passed (yes/no): ").lower()
+
+if age >= 18 and eye_test == "yes":
+    print("Eligible for Driving License")
+else:
+    print("Not Eligible for Driving License")
+```
+
+---
+
+## 13. Login System
+
+```python
+username = input("Enter username: ")
+password = input("Enter password: ")
+
+if username == "admin" and password == "python123":
+    print("Login Successful")
+else:
+    print("Invalid Username or Password")
+```
+
+---
+
+## 14. Simple Calculator
+
+```python
+a = float(input("Enter first number: "))
+operator = input("Enter operator (+, -, *, /): ")
+b = float(input("Enter second number: "))
+
+if operator == "+":
+    print("Result =", a + b)
+elif operator == "-":
+    print("Result =", a - b)
+elif operator == "*":
+    print("Result =", a * b)
+elif operator == "/":
+    if b != 0:
+        print("Result =", a / b)
+    else:
+        print("Division by zero is not allowed")
+else:
+    print("Invalid Operator")
+```
+
+---
+
+## 15. Smallest of Three Numbers
+
+```python
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+c = int(input("Enter third number: "))
+
+if a <= b and a <= c:
+    print("Smallest:", a)
+elif b <= a and b <= c:
+    print("Smallest:", b)
+else:
+    print("Smallest:", c)
+```
+
+---
+
+## 16. Multiple of 3 and 7
+
+```python
+num = int(input("Enter a number: "))
+
+if num % 3 == 0 and num % 7 == 0:
+    print("Multiple of both 3 and 7")
+else:
+    print("Not a multiple of both 3 and 7")
+```
+
+---
+
+## 17. Positive/Negative Even/Odd
+
+```python
+num = int(input("Enter a number: "))
+
+if num == 0:
+    print("Zero")
+elif num > 0 and num % 2 == 0:
+    print("Positive Even")
+elif num > 0:
+    print("Positive Odd")
+elif num % 2 == 0:
+    print("Negative Even")
+else:
+    print("Negative Odd")
+```
+
+---
+
+## 18. Discount Calculator
+
+```python
+amount = float(input("Enter purchase amount: "))
+
+if amount >= 5000:
+    discount = amount * 0.20
+elif amount >= 2000:
+    discount = amount * 0.10
+else:
+    discount = 0
+
+print("Original Amount:", amount)
+print("Discount:", discount)
+print("Final Amount:", amount - discount)
+```
+
+---
+
+## 19. Compare Two Ages
+
+```python
+age1 = int(input("Enter first person's age: "))
+age2 = int(input("Enter second person's age: "))
+
+if age1 > age2:
+    print("Person 1 is older")
+    print("Person 2 is younger")
+elif age2 > age1:
+    print("Person 2 is older")
+    print("Person 1 is younger")
+else:
+    print("Both are of the same age")
+```
+
+---
+
+## 20. Triangle Type
+
+```python
+a = int(input("Enter side 1: "))
+b = int(input("Enter side 2: "))
+c = int(input("Enter side 3: "))
+
+if a == b == c:
+    print("Equilateral Triangle")
+elif a == b or b == c or a == c:
+    print("Isosceles Triangle")
+else:
+    print("Scalene Triangle")
+```
+
+---
+
+## 21. Menu-Driven Calculator
+
+```python
+print("1. Addition")
+print("2. Subtraction")
+print("3. Multiplication")
+print("4. Division")
+
+choice = int(input("Enter your choice: "))
+
+a = float(input("Enter first number: "))
+b = float(input("Enter second number: "))
+
+if choice == 1:
+    print("Result =", a + b)
+elif choice == 2:
+    print("Result =", a - b)
+elif choice == 3:
+    print("Result =", a * b)
+elif choice == 4:
+    if b != 0:
+        print("Result =", a / b)
+    else:
+        print("Division by zero is not allowed")
+else:
+    print("Invalid Choice")
+```
+
+---
+
+## 22. Blood Donation Eligibility
+
+```python
+age = int(input("Enter age: "))
+weight = float(input("Enter weight (kg): "))
+
+if 18 <= age <= 60 and weight >= 50:
+    print("Eligible to Donate Blood")
+else:
+    print("Not Eligible to Donate Blood")
+```
+
+---
+
+## 23. ATM PIN Checker
+
+```python
+pin = input("Enter 4-digit PIN: ")
+
+if pin == "1234":
+    print("Access Granted")
+else:
+    print("Access Denied")
+```
+
+---
+
+## 24. Electricity Bill Calculator
+
+```python
+units = int(input("Enter units consumed: "))
+
+if units <= 100:
+    bill = units * 2
+elif units <= 200:
+    bill = (100 * 2) + ((units - 100) * 3)
+else:
+    bill = (100 * 2) + (100 * 3) + ((units - 200) * 5)
+
+print("Total Bill = ₹", bill)
+```
+
+---
+
+## 25. Valid Triangle
+
+```python
+a = int(input("Enter first angle: "))
+b = int(input("Enter second angle: "))
+c = int(input("Enter third angle: "))
+
+if a + b + c == 180:
+    print("Valid Triangle")
+else:
+    print("Invalid Triangle")
+```
