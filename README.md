@@ -90,15 +90,6 @@ This repository contains my **Day 3 Python** practice programs focused on **deci
 
 ## Concepts Learned
 
-* `if` Statement
-* `if-else`
-* `if-elif-else`
-* Comparison Operators (`==`, `!=`, `>`, `<`, `>=`, `<=`)
-* Logical Operators (`and`, `or`, `not`)
-* Nested Conditions
-* User Input
-* Conditional Statements
-* Decision Making
 * Boolean Expressions
 * Arithmetic Operations
 * Menu-Driven Programs
