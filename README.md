@@ -95,6 +95,45 @@ This repository contains my **Day 3 Python** practice programs focused on **deci
 * Menu-Driven Programs
 * Input Validation (Basic)
 
+Python Exception Handling Practice
+Overview
+This repository contains my Python practice programs on Exception Handling. These exercises helped me understand how to identify, handle, and raise exceptions while writing robust Python programs.
+
+The programs cover common exceptions that are frequently used in Python development and Data Analytics tasks.
+
+Topics Covered
+try
+except
+else
+finally
+raise
+ValueError
+ZeroDivisionError
+IndexError
+KeyError
+Practice Programs
+Handle invalid input while entering the number of records.
+Convert user input into a floating-point sales amount.
+Calculate average sales per order.
+Access elements from a list using an index.
+Retrieve employee names using employee IDs.
+Calculate the sum of two integers.
+Perform division with exception handling.
+Access student marks using list indices.
+Retrieve product prices from a dictionary.
+Handle multiple exceptions (ValueError and ZeroDivisionError).
+Demonstrate the use of try, except, else, and finally.
+Raise an exception for a negative age.
+Raise an exception if the password length is less than 8 characters.
+Learning Outcomes
+Through these exercises, I learned to:
+
+Handle invalid user input gracefully.
+Prevent program crashes using exception handling.
+Raise custom exceptions using raise.
+Work with multiple exception types.
+Write cleaner and more reliable Python programs.
+
 ## Learning Outcomes
 
 After completing these programs, I learned how to:
