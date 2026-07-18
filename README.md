@@ -125,7 +125,7 @@ Handle multiple exceptions (ValueError and ZeroDivisionError).
 Demonstrate the use of try, except, else, and finally.
 Raise an exception for a negative age.
 Raise an exception if the password length is less than 8 characters.
-Learning Outcomes
+## Learning Outcomes
 Through these exercises, I learned to:
 
 Handle invalid user input gracefully.
