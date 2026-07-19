@@ -2,7 +2,6 @@
 
 This repository contains my Day 1 Python practice programs.
 
-
 ## Programs
 
 1. Hello World
