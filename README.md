@@ -150,6 +150,48 @@ After completing these programs, I learned how to:
 * Improve logical thinking and problem-solving skills by solving multiple conditional programming exercises.
 * Write cleaner, more readable, and structured Python programs.
 
+# Python OOP Practice
+
+This repository contains my beginner-level **Object-Oriented Programming (OOP) practice in Python**.
+
+## Concepts Covered
+
+* Class
+* Object
+* `__init__()` method
+* `self`
+* Instance Variables
+* Methods
+* Multiple Objects
+* Encapsulation
+* Private Variables
+* Getter Method
+* Setter Method
+
+## Practice Programs
+
+1. Student Class
+2. Car Class
+3. Employee Class
+4. Mobile Class
+5. Book Class
+6. Two Student Objects
+7. Laptop Class
+8. Movie Class
+9. Bank Class
+10. Hospital Class
+11. Bank Account - Getter
+12. Bank Account - Setter
+
+## Goal
+
+To understand the basic concepts of OOP in Python through simple practice programs.
+
+## Language
+
+**Python 3**
+
+
 ⭐ This repository is part of my **Python Learning Journey**. It documents my progress in learning Python by practicing decision-making, logical operators, and real-world problem-solving with conditional statements. More repositories covering loops, strings, lists, functions, and object-oriented programming will be added as I continue learning.
 
 
