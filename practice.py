@@ -1,0 +1,332 @@
+# ============================================================
+# PYTHON OOP PRACTICE
+# ============================================================
+
+
+# 1.
+# Create a Student class with:
+# - name
+# - age
+# - display() method to print details.
+
+class Student:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def display_info(self):
+        print(f"Name: {self.name}, Age: {self.age}")
+
+
+name = input("Enter your name: ")
+age = int(input("Enter your age: "))
+
+student1 = Student(name, age)
+student1.display_info()
+
+
+# ============================================================
+
+
+# 2.
+# Create a Car class with:
+# - brand
+# - model
+# - start() method.
+
+class Car:
+    def __init__(self, brand, model):
+        self.brand = brand
+        self.model = model
+
+    def start(self):
+        print(f"Car: Brand = {self.brand}, Model = {self.model}")
+
+
+brand = input("Enter the car brand: ")
+model = input("Enter the car model: ")
+
+car1 = Car(brand, model)
+car1.start()
+
+
+# ============================================================
+
+
+# 3.
+# Create an Employee class using a constructor to initialize:
+# - employee_id
+# - employee_name
+# - salary
+# Print all details.
+
+class Employee:
+    def __init__(self, emp_id, emp_name, salary):
+        self.emp_id = emp_id
+        self.emp_name = emp_name
+        self.salary = salary
+
+
+emp_id = int(input("Enter employee ID: "))
+emp_name = input("Enter employee name: ")
+salary = int(input("Enter salary: "))
+
+emp1 = Employee(emp_id, emp_name, salary)
+
+print(f"Employee ID: {emp1.emp_id}")
+print(f"Employee Name: {emp1.emp_name}")
+print(f"Salary: {emp1.salary}")
+
+
+# ============================================================
+
+
+# 4.
+# Create a Mobile class with:
+# - brand
+# - price
+# Write a method to display the details.
+
+class Mobile:
+    def __init__(self, brand, price):
+        self.brand = brand
+        self.price = price
+
+    def display(self):
+        print(f"Mobile Brand: {self.brand}")
+        print(f"Price: {self.price}")
+
+
+brand = input("Enter brand: ")
+price = int(input("Enter price: "))
+
+mobile1 = Mobile(brand, price)
+mobile1.display()
+
+
+# ============================================================
+
+
+# 5.
+# Create a Book class with:
+# - title
+# - author
+# - price
+# Display all information.
+
+class Book:
+    def __init__(self, title, author, price):
+        self.title = title
+        self.author = author
+        self.price = price
+
+
+title = input("Enter book title: ")
+author = input("Enter book author: ")
+price = int(input("Enter book price: "))
+
+book1 = Book(title, author, price)
+
+print(f"Title: {book1.title}")
+print(f"Author: {book1.author}")
+print(f"Price: {book1.price}")
+
+
+# ============================================================
+
+
+# 6.
+# Create two Student objects and print their names and marks.
+
+class StudentMarks:
+    def __init__(self, name, marks):
+        self.name = name
+        self.marks = marks
+
+    def display(self):
+        print(f"Name: {self.name}, Marks: {self.marks}")
+
+
+name1 = input("Enter name of student 1: ")
+marks1 = int(input("Enter marks of student 1: "))
+
+student1 = StudentMarks(name1, marks1)
+
+name2 = input("Enter name of student 2: ")
+marks2 = int(input("Enter marks of student 2: "))
+
+student2 = StudentMarks(name2, marks2)
+
+student1.display()
+student2.display()
+
+
+# ============================================================
+
+
+# 7.
+# Create a Laptop class with:
+# - brand
+# - RAM
+# - processor
+# Display all values.
+
+class Laptop:
+    def __init__(self, brand, ram, processor):
+        self.brand = brand
+        self.ram = ram
+        self.processor = processor
+
+    def display(self):
+        print(f"Laptop Brand: {self.brand}")
+        print(f"RAM: {self.ram}")
+        print(f"Processor: {self.processor}")
+
+
+brand = input("Enter brand: ")
+ram = input("Enter RAM: ")
+processor = input("Enter processor: ")
+
+laptop1 = Laptop(brand, ram, processor)
+laptop1.display()
+
+
+# ============================================================
+
+
+# 8.
+# Create a Movie class with:
+# - movie name
+# - hero
+# - rating
+# Print movie details.
+
+class Movie:
+    def __init__(self, movie_name, hero, rating):
+        self.name = movie_name
+        self.hero = hero
+        self.rating = rating
+
+    def display(self):
+        print(f"Movie: {self.name}")
+        print(f"Hero: {self.hero}")
+        print(f"Rating: {self.rating}")
+
+
+name = input("Enter movie name: ")
+hero = input("Enter hero name: ")
+rating = float(input("Enter rating: "))
+
+movie1 = Movie(name, hero, rating)
+movie1.display()
+
+
+# ============================================================
+
+
+# 9.
+# Create a Bank class with:
+# - account number
+# - account holder name
+# Display the details.
+
+class Bank:
+    def __init__(self, acc_number, acc_holder_name):
+        self.acc_number = acc_number
+        self.acc_holder_name = acc_holder_name
+
+    def display(self):
+        print(f"Account Number: {self.acc_number}")
+        print(f"Account Holder Name: {self.acc_holder_name}")
+
+
+acc_number = input("Enter account number: ")
+acc_holder_name = input("Enter account holder name: ")
+
+bank1 = Bank(acc_number, acc_holder_name)
+bank1.display()
+
+
+# ============================================================
+
+
+# 10.
+# Create a Hospital class with:
+# - patient name
+# - disease
+# Display patient details.
+
+class Hospital:
+    def __init__(self, patient_name, disease):
+        self.patient_name = patient_name
+        self.disease = disease
+
+    def display(self):
+        print(f"Patient Name: {self.patient_name}")
+        print(f"Disease: {self.disease}")
+
+
+patient_name = input("Enter patient name: ")
+disease = input("Enter disease: ")
+
+hospital1 = Hospital(patient_name, disease)
+hospital1.display()
+
+
+# ============================================================
+
+
+# 11.
+# Create a BankAccount class with a private variable __balance
+# and print it using a getter method.
+
+class BankAccount:
+    def __init__(self, balance):
+        self.__balance = balance
+
+    def get_balance(self):
+        return self.__balance
+
+    def display_balance(self):
+        print(f"Balance: {self.get_balance()}")
+
+
+balance = float(input("Enter initial balance: "))
+
+account = BankAccount(balance)
+
+account.display_balance()
+
+
+# ============================================================
+
+
+# 12.
+# Create a setter method to update the private balance.
+
+class BankAccountSetter:
+    def __init__(self, balance):
+        self.__balance = balance
+
+    def get_balance(self):
+        return self.__balance
+
+    def set_balance(self, new_balance):
+        self.__balance = new_balance
+
+    def display_balance(self):
+        print(f"Balance: {self.get_balance()}")
+
+
+balance = float(input("Enter initial balance: "))
+new_balance = float(input("Enter new balance: "))
+
+account = BankAccountSetter(balance)
+
+account.set_balance(new_balance)
+account.display_balance()
+
+
+# ============================================================
+# END OF PYTHON OOP PRACTICE
+# ============================================================
