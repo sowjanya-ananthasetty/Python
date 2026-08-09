@@ -2,7 +2,6 @@
 # PYTHON OOP PRACTICE
 # ============================================================
 
-
 # 1.
 # Create a Student class with:
 # - name
