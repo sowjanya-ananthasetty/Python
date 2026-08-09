@@ -327,6 +327,3 @@ account.set_balance(new_balance)
 account.display_balance()
 
 
-# ============================================================
-# END OF PYTHON OOP PRACTICE
-# ============================================================
