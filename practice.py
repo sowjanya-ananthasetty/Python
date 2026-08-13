@@ -1,4 +1,235 @@
 # ============================================================
+# Part A: for Loop Practice (15 Questions)
+# ============================================================
+
+
+# ============================================================
+# Beginner
+# ============================================================
+
+# 1. Print numbers from 1 to 100.
+
+n = 100
+
+for i in range(1, n + 1):
+    print(i, end=", ")
+
+print()
+
+
+# ============================================================
+# 2. Print numbers from 100 to 1.
+# ============================================================
+
+n = 100
+
+for i in range(n, 0, -1):
+    if i == 1:
+        print(i)
+    else:
+        print(i, end=", ")
+
+
+# ============================================================
+# 3. Print all even numbers from 1 to 100.
+# ============================================================
+
+n = 100
+
+for i in range(1, n + 1):
+    if i % 2 == 0:
+        print(i, end=" ")
+
+print()
+
+
+# ============================================================
+# 4. Print all odd numbers from 1 to 100.
+# ============================================================
+
+n = 100
+
+for i in range(1, n + 1):
+    if i % 2 != 0:
+        print(i, end=" ")
+
+print()
+
+
+# ============================================================
+# 5. Find the sum of first N numbers.
+# ============================================================
+
+n = int(input("Enter the value of n: "))
+
+val = 0
+
+for i in range(1, n + 1):
+    val += i
+
+print("Sum =", val)
+
+
+# ============================================================
+# 6. Find the factorial of a number.
+# ============================================================
+
+n = int(input("Enter the value of n: "))
+
+val = 1
+
+for i in range(1, n + 1):
+    val *= i
+
+print("Factorial =", val)
+
+
+# ============================================================
+# 7. Print the multiplication table of a given number.
+# ============================================================
+
+n = int(input("Enter the value of n: "))
+
+for i in range(1, 11):
+    print(f"{n} X {i} = {n * i}")
+
+
+# ============================================================
+# 8. Find the sum of digits of a number.
+# ============================================================
+
+digit = int(input("Enter a number: "))
+
+val = 0
+
+for i in str(digit):
+    val += int(i)
+
+print("Sum of digits =", val)
+
+
+# ============================================================
+# 9. Count the number of digits in a number.
+# ============================================================
+
+digit = int(input("Enter a number: "))
+
+count = 0
+
+for i in str(digit):
+    count += 1
+
+print("Number of digits =", count)
+
+
+# ============================================================
+# 10. Reverse a number.
+# ============================================================
+
+n = int(input("Enter a number: "))
+
+rev = 0
+
+for i in str(n):
+    rev = int(i) + rev * 10
+
+print("Reversed number =", rev)
+
+
+# ============================================================
+# Intermediate
+# ============================================================
+
+
+# ============================================================
+# 11. Check whether a number is Prime.
+# ============================================================
+
+n = int(input("Enter a number: "))
+
+if n < 2:
+    print("Not prime")
+else:
+    is_prime = True
+
+    for i in range(2, n // 2 + 1):
+        if n % i == 0:
+            is_prime = False
+            break
+
+    if is_prime:
+        print("Is prime")
+    else:
+        print("Not prime")
+
+
+# ============================================================
+# 12. Print all Prime numbers between 1 and N.
+# ============================================================
+
+n = int(input("Enter a number: "))
+
+for num in range(2, n + 1):
+
+    is_prime = True
+
+    for i in range(2, num // 2 + 1):
+        if num % i == 0:
+            is_prime = False
+            break
+
+    if is_prime:
+        print(num, end=" ")
+
+print()
+
+
+# ============================================================
+# 13. Find the GCD (HCF) of two numbers.
+# ============================================================
+
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+
+gcd = 1
+
+for i in range(1, min(a, b) + 1):
+    if a % i == 0 and b % i == 0:
+        gcd = i
+
+print("GCD (HCF) =", gcd)
+
+
+# ============================================================
+# 14. Find the LCM of two numbers.
+# ============================================================
+
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+
+for i in range(max(a, b), a * b + 1):
+    if i % a == 0 and i % b == 0:
+        lcm = i
+        break
+
+print("LCM =", lcm)
+
+
+# ============================================================
+# 15. Generate the Fibonacci series.
+# ============================================================
+
+n = int(input("Enter the number of terms: "))
+
+a = 0
+b = 1
+
+for i in range(n):
+    print(a, end=" ")
+    a, b = b, a + b
+
+print()
+# ============================================================
 # PYTHON OOP PRACTICE
 # ============================================================
 
