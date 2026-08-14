@@ -226,6 +226,342 @@ for i in range(n):
     a, b = b, a + b
 
 print()
+
+# ============================================================
+# Python Loop Practice
+# Part B: while Loop + Additional Practice
+# ============================================================
+
+
+# ============================================================
+# BEGINNER - WHILE LOOP
+# ============================================================
+
+# 1. Print numbers from 1 to N
+
+n = 100
+i = 1
+
+while i <= n:
+    print(i, end=" ")
+    i += 1
+
+print()
+
+
+# 2. Print numbers from N to 1
+
+n = 100
+
+while n >= 1:
+    print(n, end=" ")
+    n -= 1
+
+print()
+
+
+# 3. Print even numbers using while loop
+
+n = 100
+i = 1
+
+while i <= n:
+    if i % 2 == 0:
+        print(i, end=" ")
+    i += 1
+
+print()
+
+
+# 4. Print odd numbers using while loop
+
+n = 100
+i = 1
+
+while i <= n:
+    if i % 2 != 0:
+        print(i, end=" ")
+    i += 1
+
+print()
+
+
+# 5. Find the sum of first N numbers
+
+n = int(input("Enter N: "))
+
+total = 0
+
+while n > 0:
+    total += n
+    n -= 1
+
+print("Sum =", total)
+
+
+# 6. Find factorial using while loop
+
+n = int(input("Enter a number: "))
+
+factorial = 1
+
+while n > 0:
+    factorial *= n
+    n -= 1
+
+print("Factorial =", factorial)
+
+
+# 7. Reverse a number
+
+n = int(input("Enter a number: "))
+
+reverse = 0
+
+while n > 0:
+    digit = n % 10
+    reverse = reverse * 10 + digit
+    n //= 10
+
+print("Reverse =", reverse)
+
+
+# 8. Count the number of digits
+
+n = int(input("Enter a number: "))
+
+count = 0
+
+while n > 0:
+    count += 1
+    n //= 10
+
+print("Number of digits =", count)
+
+
+# 9. Find the sum of digits
+
+n = int(input("Enter a number: "))
+
+total = 0
+
+while n > 0:
+    digit = n % 10
+    total += digit
+    n //= 10
+
+print("Sum of digits =", total)
+
+
+# 10. Check whether a number is a palindrome
+
+n = int(input("Enter a number: "))
+
+original = n
+reverse = 0
+
+while n > 0:
+    digit = n % 10
+    reverse = reverse * 10 + digit
+    n //= 10
+
+if original == reverse:
+    print("Palindrome")
+else:
+    print("Not Palindrome")
+
+
+# ============================================================
+# INTERMEDIATE - WHILE LOOP
+# ============================================================
+
+# 11. Guess the number game
+
+secret_number = 7
+
+guess = int(input("Guess the number: "))
+
+while guess != secret_number:
+    print("Wrong guess!")
+    guess = int(input("Guess again: "))
+
+print("You guessed the correct number!")
+
+
+# 12. Password validation
+
+correct_password = "python123"
+
+password = input("Enter your password: ")
+
+while password != correct_password:
+    print("Incorrect password!")
+    password = input("Enter your password: ")
+
+print("Password correct!")
+
+
+# 13. ATM menu
+
+balance = 10000
+
+while True:
+    print("\n===== ATM MENU =====")
+    print("1. Check Balance")
+    print("2. Deposit")
+    print("3. Withdraw")
+    print("4. Exit")
+
+    choice = int(input("Enter your choice: "))
+
+    if choice == 1:
+        print("Balance =", balance)
+
+    elif choice == 2:
+        amount = int(input("Enter deposit amount: "))
+        balance += amount
+        print("Amount deposited successfully.")
+        print("New balance =", balance)
+
+    elif choice == 3:
+        amount = int(input("Enter withdrawal amount: "))
+
+        if amount <= balance:
+            balance -= amount
+            print("Withdrawal successful.")
+            print("Remaining balance =", balance)
+        else:
+            print("Insufficient balance.")
+
+    elif choice == 4:
+        print("Thank you for using the ATM!")
+        break
+
+    else:
+        print("Invalid choice.")
+
+
+# 14. Read numbers until the user enters 0
+
+num = int(input("Enter a number: "))
+
+while num != 0:
+    print("You entered:", num)
+    num = int(input("Enter another number (0 to stop): "))
+
+print("Program ended.")
+
+
+# 15. Search an element in a list using while loop
+
+nums = [10, 20, 30, 40, 50]
+
+search = int(input("Enter the element to search: "))
+
+i = 0
+found = False
+
+while i < len(nums):
+    if nums[i] == search:
+        found = True
+        break
+
+    i += 1
+
+if found:
+    print("Element found at index:", i)
+else:
+    print("Element not found.")
+
+
+# ============================================================
+# ADDITIONAL LOOP PRACTICE
+# ============================================================
+
+# 16. Find GCD of two numbers
+
+a = int(input("Enter a: "))
+b = int(input("Enter b: "))
+
+gcd = 1
+
+for i in range(1, min(a, b) + 1):
+    if a % i == 0 and b % i == 0:
+        gcd = i
+
+print("GCD =", gcd)
+
+
+# 17. Print all prime numbers from 1 to N
+
+n = int(input("Enter N: "))
+
+for num in range(2, n + 1):
+
+    is_prime = True
+
+    for i in range(2, int(num ** 0.5) + 1):
+        if num % i == 0:
+            is_prime = False
+            break
+
+    if is_prime:
+        print(num, end=" ")
+
+print()
+
+
+# 18. Check whether a number is prime
+
+n = int(input("Enter a number: "))
+
+is_prime = True
+
+if n < 2:
+    is_prime = False
+else:
+    for i in range(2, int(n ** 0.5) + 1):
+        if n % i == 0:
+            is_prime = False
+            break
+
+if is_prime:
+    print("Prime")
+else:
+    print("Not Prime")
+
+
+# 19. Check whether a string is a palindrome
+
+text = input("Enter a string: ")
+
+reverse = ""
+
+for char in text:
+    reverse = char + reverse
+
+if text == reverse:
+    print("Palindrome")
+else:
+    print("Not Palindrome")
+
+
+# 20. Print odd numbers from 1 to 100
+
+for i in range(1, 101, 2):
+    print(i, end=" ")
+
+print()
+
+
+# 21. Add an element to a list
+
+my_list = [10, 20, 30, 40, 50]
+
+my_list.append(60)
+
+print(my_list)
+
 # ============================================================
 # PYTHON OOP PRACTICE
 # ============================================================
